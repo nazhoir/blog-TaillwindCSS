@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {
+    font-family: 'Raleway', sans-serif;
+    @apply bg-slate-200;
+}
+
+
+
+.navbar-fixed {
+    @apply fixed z-[9999] bg-white bg-opacity-80;
+    backdrop-filter: blur(5px);
+    box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.hamburger-line {
+    @apply w-[30px] h-[2px] my-2 block bg-black;
+}
+.hamburger-line-2 {
+    @apply w-[25px] h-[2px] my-2 block bg-black;
+}
+
+.hamburger-active > span:nth-child(1) {
+    @apply rotate-45;
+}
+.hamburger-active > span:nth-child(2) {
+    @apply scale-0;
+}
+.hamburger-active > span:nth-child(3) {
+    @apply -rotate-45;
+}
+
+.hide-scroll-bar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.hide-scroll-bar::-webkit-scrollbar {
+    display: none;
+}
+
+.instagram {
+    background: linear-gradient(15deg,#ffb13d,#dd277b,#4d5ed4);
+}
+
+.facebook {
+    background: #3b5999;
+}
+.youtube {
+    background: #f50000;
+}
+.twitter {
+    background: #00acee;
+}
